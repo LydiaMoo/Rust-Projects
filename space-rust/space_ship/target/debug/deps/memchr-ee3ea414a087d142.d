@@ -1,0 +1,12 @@
+/Users/lydiawozniak/Documents/rust-projects/space-rust/space_ship/target/debug/deps/libmemchr-ee3ea414a087d142.rlib: /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/lib.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/c.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/fallback.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/iter.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/naive.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/mod.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/avx.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/sse2.rs
+
+/Users/lydiawozniak/Documents/rust-projects/space-rust/space_ship/target/debug/deps/memchr-ee3ea414a087d142.d: /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/lib.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/c.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/fallback.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/iter.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/naive.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/mod.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/avx.rs /Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/sse2.rs
+
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/lib.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/c.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/fallback.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/iter.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/naive.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/mod.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/avx.rs:
+/Users/lydiawozniak/.cargo/registry/src/github.com-1ecc6299db9ec823/memchr-2.1.1/src/x86/sse2.rs:
