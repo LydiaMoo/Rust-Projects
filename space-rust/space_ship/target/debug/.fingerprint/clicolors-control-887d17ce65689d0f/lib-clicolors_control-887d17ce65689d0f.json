@@ -1,1 +1,0 @@
-{"rustc":12235846850856590500,"features":"[\"default\", \"terminal_autoconfig\"]","target":16885339304619919851,"profile":7990393541957723157,"path":157387399044326864,"deps":[["lazy_static v0.2.11","lazy_static",10857477120778728041],["libc v0.2.43","libc",11978844579203970360]],"local":[{"Precalculated":"0.2.0"}],"rustflags":[],"edition":"Edition2015"}

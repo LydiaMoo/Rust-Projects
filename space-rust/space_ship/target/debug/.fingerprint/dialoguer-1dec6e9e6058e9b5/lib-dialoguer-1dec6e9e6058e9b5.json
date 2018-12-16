@@ -1,1 +1,0 @@
-{"rustc":12235846850856590500,"features":"[]","target":777285186968482426,"profile":7990393541957723157,"path":4477892327598079314,"deps":[["console v0.6.2","console",11376933584364024720],["tempfile v2.2.0","tempfile",6810992406109716278]],"local":[{"Precalculated":"0.1.0"}],"rustflags":[],"edition":"Edition2015"}
