@@ -47,9 +47,9 @@ fn main() {
 
       let canteen = Room {
         name: "Canteen".to_string(),
-        view: "\nToo Busy focus on food".to_string(),
-        action: "watch".to_string(),
-        desc: "\nIs that Father Christmas going over Australia".to_string()
+        view: "\nOn the counter there are some shiny foil packets. Maybe we could 'open' one and have a look to see what the crew eats at Christmas on the ISS".to_string(),
+        action: "open".to_string(),
+        desc: "\nYou pick up one of the packets, on the front it says FULL TURKEY DINNER. You rip open the top of the packet and the smell of roast potatos, gravy and all the acompinments overwhelms you. Taking a look inside, it just looks like mush.".to_string()
         //roomNumber: 4,
         //active: false
     };
@@ -65,7 +65,7 @@ fn main() {
 
       let entrance = Room {
         name: "Entrance".to_string(),
-        view: "\nYou just got here, look around".to_string(),
+        view: "\nYou just got here, look around the ISS some more".to_string(),
         action: "watch".to_string(),
         desc: "\nIs that Father Christmas going over Australia".to_string()
         //roomNumber: 3,
@@ -92,16 +92,14 @@ fn main() {
 
     let ship = [viewing_platform, air_lock, canteen, flight_deck, entrance, engine_room, sleeping_quarters];
 
-    println!("Hello, welcome aboard. Firstly please could you tell us your name?");
-    let name = Input::new("Your name").interact().unwrap();
-    println!("Hello {}, let's prepare for an exciting adventure, would you like to start? (Please type y or n)", name);
-    let response = Input::new("Your response").interact().unwrap();
-
+    println!("\nHello, welcome aboard it's Christmas on the ISS 2027 and you've got some exploring to do. \nFirstly please could you tell us your name?");
+    let name = Input::new("\nYour name").interact().unwrap();
+    println!("\n{}, let's prepare for an exciting Christmas adventure in space. \nIn any room you can move around the space-ship 'left', or 'right', look 'around' and action whatever is in quote marks. \nWould you like to start? (Please type y or n)", name);
+    let response = Input::new("\nYour response").interact().unwrap();
     if (response.to_lowercase()) == "y" {
-        println!("Awesome, let's get going.");
-        println!("\nIn any room you can move around the space-ship 'left', or 'right', look at the 'view' and action whatever is in quote marks");
+        println!("\nAwesome, let's get going.");
     } else {
-        println!("\nThat's a shame.\n");
+        println!("\nThat's a shame.\n Goodbye.");
         process::exit(0x0100);
     }
 
@@ -109,7 +107,7 @@ fn main() {
 
     let mut location = 1; 
 
-    println!("\n{} you are in the {}.", name, ship[location].name);
+    println!("\n\n{} you are in the {}.", name, ship[location].name);
 
     while health == 1 {
 
@@ -143,8 +141,11 @@ fn main() {
                     println!("\n{}", ship[location].desc);
                     location
             }
-        } else if (response.to_lowercase()) == "view" {
+        } else if (response.to_lowercase()) == "around" {
             println!("\n{}", ship[location].view);
+            location
+        } else if (response.to_lowercase()) == "where" {
+            println!("\n{}", ship[location].name);
             location
         } else {
             process::exit(0x0100);
