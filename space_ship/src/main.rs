@@ -102,7 +102,11 @@ fn main() {
     };
 
     let ship = [viewing_platform, air_lock, canteen, flight_deck, entrance, engine_room, sleeping_quarters];
-
+    let passages = [
+        (viewing_platform, air_lock),
+        (air_lock, canteen),
+        (canteen)
+    ]
     println!("\nHello, welcome aboard it's Christmas on the ISS 2027 and you've got some exploring to do.
          .--._.--.--.__.--.--.__.--.--.__.--.--._.--.
        _(_      _Y_      _Y_      _Y_      _Y_      _)_
