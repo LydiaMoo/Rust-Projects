@@ -133,49 +133,45 @@ fn main() {
 
     while health == 1 {
 
-        
         let response = Input::new("\nYour response").interact().unwrap();
 
-        location = if (response.to_lowercase()) == "right" {
-            if location == 6 { 
+        location = match response.to_lowercase().as_ref() {
+            "right" => if location == 6 { 
                 println!("\n{} you are in the {}.", name, ship[0].name);
                 0
             } else {
                 println!("\n{} you are in the {}.", name, ship[location+1].name);
                 location + 1
-            }
-        } else if response == "left" {
-            if location == 0 {
+            },
+
+            "left" => if location == 0 {
                 println!("\n{} you are in the {}.", name, ship[6].name);
                 6
             } else {
                 println!("\n{} you are in the {}.", name, ship[location-1].name);
                 location - 1
-            }
+            },
 
-        } else if (response.to_lowercase()) == ship[location].action 
-            {
-                if (response.to_lowercase()) == "outside" {
+            bibble if bibble == ship[location].action => 
+                if response.to_lowercase() == "outside" {
                     println!("\n{}", ship[location].desc);
                     airlock();
                     location
                 } else {
                     println!("\n{}", ship[location].desc);
                     location
-            }
-        } else if (response.to_lowercase()) == "around" {
-            println!("\n{}", ship[location].view);
-            location
-        } else if (response.to_lowercase()) == "where" {
-            println!("\n{}", ship[location].name);
-            location
-        } else if (response.to_lowercase()) == "leave" {
-            process::exit(0x0100);
-        } else {
-            process::exit(0x0100);
+            },
+
+            "around" => {println!("\n{}", ship[location].view);
+                location},
+
+            "where" => {println!("\n{}", ship[location].name);
+                location},
+
+            "leave" => process::exit(0x0100),
+
+            _ => {println!("Do some more things");
+                location}
         };
-        //println!("location number, {}", location); 
-    };
-    //println!("{} you are now in the {}", name, ship[location]);
-    
+    };  
 }
